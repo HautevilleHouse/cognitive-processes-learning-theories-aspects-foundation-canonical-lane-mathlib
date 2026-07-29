@@ -1,0 +1,20 @@
+import canonicalLaneMathlib.AdmissibleClass
+import CognitiveProcessesLearningTheoriesAspectsFoundationCanonicalLaneLean.CognitiveArchitecture
+import CognitiveProcessesLearningTheoriesAspectsFoundationCanonicalLaneLean.LearningMechanisms
+import CognitiveProcessesLearningTheoriesAspectsFoundationCanonicalLaneLean.DevelopmentalStages
+import CognitiveProcessesLearningTheoriesAspectsFoundationCanonicalLaneLean.MotivationEngagement
+import CognitiveProcessesLearningTheoriesAspectsFoundationCanonicalLaneLean.InstructionalDesign
+import CognitiveProcessesLearningTheoriesAspectsFoundationCanonicalLaneLean.AssessmentEvaluation
+
+namespace HautevilleHouse
+namespace CognitiveProcessesLearningTheoriesAspectsFoundationCanonicalLaneLean
+
+def ConstrainedCognitiveProcessesClosure (A : AdmissibleClass) : Prop :=
+  bridgeClosed A ∧ gateClosed A
+
+theorem constrained_cognitive_processes_endgame (A : AdmissibleClass) :
+    ConstrainedCognitiveProcessesClosure A := by
+  exact And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
+
+end CognitiveProcessesLearningTheoriesAspectsFoundationCanonicalLaneLean
+end HautevilleHouse
